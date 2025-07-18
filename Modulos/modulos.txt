@@ -1,0 +1,34 @@
+1. Módulo de Usuarios
+
+-Permite registrar nuevos usuarios y hacer login.
+-Cada usuario puede tener rol de cliente o administrador.
+-Se puede ver y editar la información del perfil.
+
+2. Módulo de Productos
+
+-El administrador puede agregar, editar o eliminar productos (como camisetas, pantalones, etc.).
+-Los usuarios pueden ver los productos disponibles.
+-Los productos tienen: nombre, precio, talla, color, categoría y stock.
+
+3. Módulo de Carrito
+
+-Los usuarios pueden agregar productos al carrito.
+-Se puede ver el contenido del carrito y editar cantidades.
+-Se calcula el total antes de hacer la compra.
+
+4. Módulo de Órdenes (Pedidos)
+
+-Al confirmar el carrito se crea una orden.
+-El usuario puede ver sus pedidos anteriores.
+-El administrador puede cambiar el estado del pedido (pendiente, enviado, entregado).
+
+5. Módulo de Pagos 
+
+-Por ahora solo simula que se hizo un pago.
+-En versiones futuras se puede conectar con métodos de pago reales.
+
+6. Módulo de Administración
+
+-El admin puede gestionar productos y usuarios.
+-También puede ver los pedidos de todos los clientes.
+-Muestra un resumen de las ventas (en fases siguientes).

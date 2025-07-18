@@ -1,0 +1,46 @@
+
+    Definir carrito[10], cantidades[10] Como Entero
+    Definir productoID, i, encontrado Como Entero
+
+   
+    Definir productosDisponibles[3] Como Entero
+    productosDisponibles[1] <- 101 // Camiseta
+    productosDisponibles[2] <- 102 // Pantalón
+    productosDisponibles[3] <- 103 // Casaca
+
+    Escribir "Ingrese el ID del producto que desea agregar:"
+    Escribir "101 - Camiseta"
+    Escribir "102 - Pantalón"
+    Escribir "103 - Casaca"
+    Leer productoID
+
+    encontrado <- 0
+
+  
+    Para i <- 1 Hasta 10 Con Paso 1
+        Si carrito[i] = productoID Entonces
+            cantidades[i] <- cantidades[i] + 1
+            encontrado <- 1
+            Salir
+        FinSi
+    FinPara
+
+   
+    Si encontrado = 0 Entonces
+        Para i <- 1 Hasta 10 Con Paso 1
+            Si carrito[i] = 0 Entonces
+                carrito[i] <- productoID
+                cantidades[i] <- 1
+                encontrado <- 1
+                Salir
+            FinSi
+        FinPara
+    FinSi
+
+    Si encontrado = 1 Entonces
+        Escribir "Producto agregado al carrito correctamente."
+    Sino
+        Escribir "No se pudo agregar el producto. Carrito lleno."
+    FinSi
+FinProceso
+

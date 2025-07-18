@@ -1,0 +1,24 @@
+
+    Definir correo, contraseña Como Cadena
+    Definir loginCorrecto Como Logico
+
+    
+    Definir correol, contraseñal Como Cadena
+    correol <- "cliente@tienda.com"
+    contraseñal <- "1234"
+
+    Escribir "Ingrese su correo:"
+    Leer correo
+    Escribir "Ingrese su contraseña:"
+    Leer contrasena
+
+    loginCorrecto <- Falso
+
+    Si correo = correol Y contraseña = contrasenal Entonces
+        loginCorrecto <- Verdadero
+        Escribir "Inicio de sesión exitoso. Bienvenido a la tienda."
+    Sino
+        Escribir "Correo o contraseña incorrectos."
+    FinSi
+FinProceso
+
