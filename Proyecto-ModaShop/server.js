@@ -19,7 +19,7 @@ app.use("/orders", orderRoutes);
 
 
 app.get("/", (req, res) => {
-  res.send("🚀 Bienvenido a ModaShop API");
+  res.send(" Bienvenido a ModaShop API");
 });
 
 
@@ -40,5 +40,5 @@ const productRoutes = require("./routes/productRoutes");
 app.use("/products", productRoutes);
 
 app.listen(PORT, () => {
-  console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
+  console.log(` Servidor corriendo en http://localhost:${PORT}`);
 });
